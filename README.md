@@ -1,14 +1,14 @@
-# GSA 18F Stack
+# 18F Practice
 
 ## Install Environment:
 
 <pre>
-$ git clone https://github.com/JihadMotii-REISys/g18f-stack.git
+$ git clone https://github.com/JihadMotii-REISys/g18f-practice.git
 $ vagrant up
 </pre>
 
 
-Note: the IP address allocated to this new VM Box is 192.168.56.107 and if you have used this IP Address, you can change it in `puphpet/config.yaml`
+Note: the IP address allocated to this new VM Box is 192.168.56.108 and if you have used this IP Address, you can change it in `puphpet/config.yaml`
 
 ## Starting dev :
 
