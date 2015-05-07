@@ -29,6 +29,9 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
+        options: {
+            spawn: false
+        },
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
@@ -362,13 +365,27 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      svg: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/svg',
+        dest: '.tmp/svg/',
+        src: '{,*/}*.svg'
+      },
+      fonts: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/fonts',
+        dest: '.tmp/fonts/',
+        src: '*'
       }
     },
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-        'copy:styles'
+        'copy:styles',
+        'copy:svg',
+        'copy:fonts'
       ],
       test: [
         'copy:styles'

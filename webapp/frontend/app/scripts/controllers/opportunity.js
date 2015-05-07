@@ -1,14 +1,18 @@
 'use strict';
 
+
 /**
  * @ngdoc function
- * @name frontendApp.controller:AboutCtrl
+ * @name frontendApp.controller:OpportunityCtrl
  * @description
- * # AboutCtrl
+ * # OpportunityCtrl
  * Controller of the frontendApp
  */
-angular.module('frontendApp')
-  .controller('AboutCtrl', function ($scope) {
+
+var app = angular.module('frontendApp');
+
+app
+  .controller('OpportunityCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
